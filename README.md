@@ -12,8 +12,7 @@ We are working on connecting two applications. Let's call them `source` and `tar
 - Target application needs to receive all the events
 	- target application is a GraphQL API - please mock API calls to the target application
 	- event structure needs to be enhanced by adding `{ brand: 'testBrand' }` as the target application requires it. Mind that this information is not flowing from the source application
-	- the target application is rate-limited. In most cases, events from source applications are flowing more frequently than the target application is able to consume them. Please make sure the designed solution will take that into 
-	consideration
+	- the target application is rate-limited. In most cases, events from source application are flowing more frequently than the target application is able to consume them. Please make sure the designed solution will take that into consideration
 
 The goal is to create a `system`, to connect above. As shown in the below graph
 
