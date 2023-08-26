@@ -3,34 +3,35 @@
 
 Solve a problem as described below
 
-We are working on connecting two systems. Lets call them `source` and `target` system
+We are working on connecting two systems. Let's call them `source` and `target` systems.
 
-- Source system wants to call our API every time event occurs.
+- Source system wants to call our API every time an event occurs
 	- event structure `{ id: '<randomId>', name: 'test event', body: 'test body', timestamp: '<currentTimestamp>' }`
 	- please mock the API calls from the source system
 
-- Target system needs to recieve all the events
-	- target system is an GraphQL API - please mock API calls to target system
-	- event structure needs to be enchanced by adding `{ brand: 'testBrand' }` as target system requires it. Mind that this information is not flowing from source system
-	- target system is rate limited. In most cases, events from source systems are flowing more frequent than target system is able to consume it. Please make sure designed solution will take that into consideration
+- Target system needs to receive all the events
+	- target system is a GraphQL API - please mock API calls to the target system
+	- event structure needs to be enhanced by adding `{ brand: 'testBrand' }` as the target system requires it. Mind that this information is not flowing from the source system
+	- the target system is rate-limited. In most cases, events from source systems are flowing more frequently than the target system is able to consume them. Please make sure the designed solution will take that into 
+	consideration
 
 ### Considerations
 
 - System needs to be working in the cloud
 - Deployment must be through CI/CD pipeline
 - System needs to be secure (authentication)
-- System needs to be higly available
-- We need to have full visibility about events flowing between `source` and `target` systems
+- System needs to be highly available
+- We need to have full visibility on events flowing between `source` and `target` systems
 - We need to be able to trace the flow of every single event
 - Everything must be covered with tests
 - Everything needs to be properly documented, with HLD and LLD included
 - System needs to be easy to maintain and support
-- All errors / issues need be visible and handled properly
-- We want to see not only the solution but also how you think and your working process, so please keep all your commits accessible, dont squash them and use proper naming standard for them
+- All errors/issues need to be visible and handled properly
+- We want to see not only the solution but also how you think and your working process, so please keep all your commits accessible, don't squash them, and use proper naming standards for them
 
 ### Required Technology
 
-- Use Node (TypeScript) or GO as programming language
+- Use Node (TypeScript) or GO as a programming language
 - Use Terraform to provision the infrastructure
 - Use AWS or GCP
 
