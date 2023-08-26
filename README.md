@@ -35,6 +35,7 @@ A[Source Applcation] -- System to be created --> C[Target Application]
 - Everything needs to be properly documented, with HLD and LLD included
 - System needs to be easy to maintain and support
 - All errors/issues need to be visible and handled properly
+- We want to see the source code and the working application
 - We want to see not only the solution but also how you think and your working process, so please keep all your commits accessible, don't squash them, and use proper naming standards for them
 
 ### Required Technology
