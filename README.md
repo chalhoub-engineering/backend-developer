@@ -7,7 +7,7 @@ We are working on connecting two applications. Let's call them `source` and `tar
 
 - Source application wants to call our API every time an event occurs
   - event structure `{ id: '<randomId>', name: 'test event', body: 'test body', timestamp: '<currentTimestamp>' }`
-  - source application sents event only once and requires 2xx response in 500ms. If source application will not recieve 2xx response within 500ms then considers that event delivery has failed and is not resending it again
+  - source application sends event only once and requires 2xx response in 500ms. If source application will not receive 2xx response within 500ms then considers that event delivery has failed and is not resending it again
   - please mock the API calls from the source application
 
 - Target application needs to receive all the events
