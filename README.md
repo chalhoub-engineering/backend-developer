@@ -3,17 +3,25 @@
 
 Solve a problem as described below
 
-We are working on connecting two systems. Let's call them `source` and `target` systems.
+We are working on connecting two applications. Let's call them `source` and `target` application.
 
-- Source system wants to call our API every time an event occurs
+- Source application wants to call our API every time an event occurs
 	- event structure `{ id: '<randomId>', name: 'test event', body: 'test body', timestamp: '<currentTimestamp>' }`
-	- please mock the API calls from the source system
+	- please mock the API calls from the source application
 
-- Target system needs to receive all the events
-	- target system is a GraphQL API - please mock API calls to the target system
-	- event structure needs to be enhanced by adding `{ brand: 'testBrand' }` as the target system requires it. Mind that this information is not flowing from the source system
-	- the target system is rate-limited. In most cases, events from source systems are flowing more frequently than the target system is able to consume them. Please make sure the designed solution will take that into 
+- Target application needs to receive all the events
+	- target application is a GraphQL API - please mock API calls to the target application
+	- event structure needs to be enhanced by adding `{ brand: 'testBrand' }` as the target application requires it. Mind that this information is not flowing from the source application
+	- the target application is rate-limited. In most cases, events from source applications are flowing more frequently than the target application is able to consume them. Please make sure the designed solution will take that into 
 	consideration
+
+The goal is to create a `system`, to connect above. As shown in the below graph
+
+```mermaid
+graph LR
+A[Source Applcation] -- To be System created --> C[Target Application]
+```
+
 
 ### Considerations
 
