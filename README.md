@@ -19,7 +19,7 @@ The goal is to create a `system`, to connect above. As shown in the below graph
 
 ```mermaid
 graph LR
-A[Source Applcation] -- To be System created --> C[Target Application]
+A[Source Applcation] -- System to be created --> C[Target Application]
 ```
 
 
